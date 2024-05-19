@@ -1,0 +1,24 @@
+{
+  "name": "ts-blueprints",
+  "version": "1.0.0",
+  "description": "TypeScript blueprints",
+  "author": "asmleshiy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmleshiy/ts-blueprints.git"
+  },
+  "homepage": "https://github.com/asmleshiy/ts-blueprints#readme",
+  "keywords": [
+    "typescript",
+    "blueprints",
+    "backend",
+    "frontend",
+    "node",
+    "nest",
+    "react",
+    "vue",
+    "angular",
+    "types"
+  ],
+  "license": "MIT"
+}
