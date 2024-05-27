@@ -2,17 +2,16 @@
 
 This library provides easy-to-use type templates to help you design models with standardized field names. It also helps prevent typos during development.
 
-# installation
+#### Installation
 
 > `npm i -D ts-blueprints typescript`
 
-# usage
+#### Usage
 
 `types.ts`
 
 ```
-import * as bp from 'ts-blueprints/snakecase'
-import { Combine, Select, Subtract } from 'ts-blueprints/utils'
+import { snakecase as bp, Combine, Select, Subtract  } from 'ts-blueprints'
 
 export type Entity = Combine<
   & bp.ID<number>
@@ -93,4 +92,18 @@ export class UserEntity implements User, IEditableUser {
     // TODO: implement
   }
 }
+```
+
+#### Customization
+
+Using this library you can also create your own customized blueprint types that can be more suitable to your project.
+
+`types/blueprints.ts`
+
+```
+import { snakecase as bp } from 'ts-blueprints'
+
+export type ID<T extends string | number = string> = bp.ID<T>
+export type CreatedAt<T extends string | number | Date = Date> = bp.CreatedAt<T>
+
 ```
