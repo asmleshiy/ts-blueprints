@@ -382,6 +382,7 @@ export declare type Format<T = unknown> = { format: T }
 export declare type Formats<T = unknown> = { formats: T }
 export declare type Forms<T = unknown> = { forms: T }
 export declare type FromDate<T = unknown> = { fromDate: T }
+export declare type FullName<T = unknown> = { fullName: T }
 export declare type GID<T = unknown> = { gid: T }
 export declare type GUID<T = unknown> = { guid: T }
 export declare type Game<T = unknown> = { game: T }
@@ -447,7 +448,7 @@ export declare type IpAddress<T = unknown> = { ipAddress: T }
 export declare type IsDebug<T = unknown> = { isDebug: T }
 export declare type IsDirty<T = unknown> = { isDirty: T }
 export declare type IsEnable<T = unknown> = { isenable: T }
-export declare type IsNulluble<T = unknown> = { isNullable: T }
+export declare type IsNullable<T = unknown> = { isNullable: T }
 export declare type IsProduction<T = unknown> = { isproduction: T }
 export declare type IsTrial<T = unknown> = { istrial: T }
 export declare type Iso<T = unknown> = { iso: T }
@@ -938,7 +939,7 @@ export declare type Tickets<T = unknown> = { tickets: T }
 export declare type Time<T = unknown> = { time: T }
 export declare type TimeUtc<T = unknown> = { timeUtc: T }
 export declare type Timeout<T = unknown> = { timeout: T }
-export declare type Timestamp = { timestamp: number }
+export declare type Timestamp<T = unknown> = { timestamp: T }
 export declare type Timezone<T = unknown> = { timezone: T }
 export declare type TimezoneOffset<T = unknown> = { timezoneOffset: T }
 export declare type Title<T = unknown> = { title: T }
@@ -962,9 +963,9 @@ export declare type TransactionId<T = unknown> = { transactionId: T }
 export declare type TransactionIds<T = unknown> = { transactionIds: T }
 export declare type Transactions<T = unknown> = { transactions: T }
 export declare type Trial<T = unknown> = { trial: T }
-export declare type Ttl = { ttl: number }
-export declare type TtlMs = { ttlMs: number }
-export declare type TtlSec = { ttlSec: number }
+export declare type Ttl<T = unknown> = { ttl: T }
+export declare type TtlMs<T = unknown> = { ttlMs: T }
+export declare type TtlSec<T = unknown> = { ttlSec: T }
 export declare type Type<T = unknown> = { type: T }
 export declare type TypeId<T = unknown> = { typeId: T }
 export declare type TypeIds<T = unknown> = { typeIds: T }
