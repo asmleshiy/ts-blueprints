@@ -79,10 +79,17 @@ export declare type Attributes<T = unknown> = { attributes: T }
 export declare type Auth<T = unknown> = { auth: T }
 export declare type AuthProvider<T = unknown> = { auth_provider: T }
 export declare type Authorized<T = unknown> = { authorized: T }
+export declare type Auto<T = unknown> = { auto: T }
+export declare type AutoLoad<T = unknown> = { auto_load: T }
+export declare type AutoRun<T = unknown> = { auto_run: T }
 export declare type Aws<T = unknown> = { aws: T }
 export declare type BID<T = unknown> = { bid: T }
 export declare type Background<T = unknown> = { background: T }
 export declare type BackgroundColor<T = unknown> = { background_color: T }
+export declare type Badge<T = unknown> = { badge: T }
+export declare type BadgeId<T = unknown> = { badge_id: T }
+export declare type BadgeIds<T = unknown> = { badge_ids: T }
+export declare type Badges<T = unknown> = { badges: T }
 export declare type BaseUrl<T = unknown> = { base_url: T }
 export declare type Block<T = unknown> = { block: T }
 export declare type BlockId<T = unknown> = { block_id: T }
@@ -100,6 +107,7 @@ export declare type BucketUrl<T = unknown> = { bucket_url: T }
 export declare type Buckets<T = unknown> = { buckets: T }
 export declare type Budget<T = unknown> = { budget: T }
 export declare type Buffer<T = unknown> = { buffer: T }
+export declare type Builder<T = unknown> = { builder: T }
 export declare type Bundle<T = unknown> = { bundle: T }
 export declare type BundleId<T = unknown> = { bundle_id: T }
 export declare type BundleIds<T = unknown> = { bundle_ids: T }
@@ -120,6 +128,7 @@ export declare type Card<T = unknown> = { card: T }
 export declare type CardId<T = unknown> = { card_id: T }
 export declare type CardIds<T = unknown> = { card_ids: T }
 export declare type Cards<T = unknown> = { cards: T }
+export declare type Cascade<T = unknown> = { cascade: T }
 export declare type Categories<T = unknown> = { categories: T }
 export declare type Category<T = unknown> = { category: T }
 export declare type CategoryId<T = unknown> = { category_id: T }
@@ -142,6 +151,10 @@ export declare type ChunkIds<T = unknown> = { chunk_ids: T }
 export declare type ChunkSize<T = unknown> = { chunk_size: T }
 export declare type Chunks<T = unknown> = { chunks: T }
 export declare type City<T = unknown> = { city: T }
+export declare type Class<T = unknown> = { class: T }
+export declare type ClassId<T = unknown> = { class_id: T }
+export declare type ClassIds<T = unknown> = { class_ids: T }
+export declare type Classes<T = unknown> = { classes: T }
 export declare type ClickId<T = unknown> = { click_id: T }
 export declare type ClickIds<T = unknown> = { click_ids: T }
 export declare type Clicks<T = unknown> = { clicks: T }
@@ -163,6 +176,11 @@ export declare type CollectionName<T = unknown> = { collection_name: T }
 export declare type Collections<T = unknown> = { collections: T }
 export declare type Color<T = unknown> = { color: T }
 export declare type Colors<T = unknown> = { colors: T }
+export declare type Column<T = unknown> = { column: T }
+export declare type ColumnId<T = unknown> = { column_id: T }
+export declare type ColumnIds<T = unknown> = { column_ids: T }
+export declare type ColumnName<T = unknown> = { column_name: T }
+export declare type Columns<T = unknown> = { columns: T }
 export declare type Comment<T = unknown> = { comment: T }
 export declare type CommentId<T = unknown> = { comment_id: T }
 export declare type CommentIds<T = unknown> = { comment_ids: T }
@@ -179,6 +197,7 @@ export declare type Configs<T = unknown> = { configs: T }
 export declare type Constant<T = unknown> = { constant: T }
 export declare type Constraint<T = unknown> = { constraint: T }
 export declare type Constraints<T = unknown> = { constraints: T }
+export declare type Constructor<T = unknown> = { constructor: T }
 export declare type Consumer<T = unknown> = { consumer: T }
 export declare type ConsumerId<T = unknown> = { consumer_id: T }
 export declare type ConsumerIds<T = unknown> = { consumer_ids: T }
@@ -192,12 +211,19 @@ export declare type Cost<T = unknown> = { cost: T }
 export declare type Count<T = unknown> = { count: T }
 export declare type Country<T = unknown> = { country: T }
 export declare type CountryCode<T = unknown> = { country_code: T }
+export declare type Create<T = unknown> = { create: T }
 export declare type CreatedAt<T = unknown> = { created_at: T }
+export declare type Creative<T = unknown> = { creative: T }
+export declare type CreativeId<T = unknown> = { creative_id: T }
+export declare type CreativeIds<T = unknown> = { creative_ids: T }
+export declare type CreativeName<T = unknown> = { creative_name: T }
+export declare type Creatives<T = unknown> = { creatives: T }
 export declare type Credentials<T = unknown> = { credentials: T }
 export declare type Csv<T = unknown> = { csv: T }
 export declare type Currencies<T = unknown> = { currencies: T }
 export declare type Currency<T = unknown> = { currency: T }
 export declare type CurrencyCode<T = unknown> = { currency_code: T }
+export declare type Cursor<T = unknown> = { cursor: T }
 export declare type Customer<T = unknown> = { customer: T }
 export declare type CustomerEmail<T = unknown> = { customer_email: T }
 export declare type CustomerId<T = unknown> = { customer_id: T }
@@ -217,6 +243,7 @@ export declare type Days<T = unknown> = { days: T }
 export declare type DeadLetter<T = unknown> = { dead_letter: T }
 export declare type DeadLetters<T = unknown> = { dead_letters: T }
 export declare type Debug<T = unknown> = { debug: T }
+export declare type Decrement<T = unknown> = { decrement: T }
 export declare type Default<T = unknown> = { default: T }
 export declare type DefaultId<T = unknown> = { default_id: T }
 export declare type DefaultIds<T = unknown> = { default_ids: T }
@@ -224,6 +251,7 @@ export declare type Defaults<T = unknown> = { defaults: T }
 export declare type Delay<T = unknown> = { delay: T }
 export declare type DelayMs<T = unknown> = { delay_ms: T }
 export declare type DelaySec<T = unknown> = { delay_sec: T }
+export declare type Delete<T = unknown> = { delete: T }
 export declare type DeletedAt<T = unknown> = { deleted_at: T }
 export declare type Dependences<T = unknown> = { dependences: T }
 export declare type Depends<T = unknown> = { depends: T }
@@ -302,6 +330,7 @@ export declare type Entries<T = unknown> = { entries: T }
 export declare type Entry<T = unknown> = { entry: T }
 export declare type EntryId<T = unknown> = { entry_id: T }
 export declare type EntryIds<T = unknown> = { entry_ids: T }
+export declare type Enum<T = unknown> = { enum: T }
 export declare type Env<T = unknown> = { env: T }
 export declare type EnvFilePath<T = unknown> = { env_file_path: T }
 export declare type EnvKeys<T = unknown> = { env_keys: T }
@@ -340,6 +369,7 @@ export declare type External<T = unknown> = { external: T }
 export declare type ExternalId<T = unknown> = { external_id: T }
 export declare type ExternalIds<T = unknown> = { external_ids: T }
 export declare type Externals<T = unknown> = { externals: T }
+export declare type Factory<T = unknown> = { factory: T }
 export declare type Fail<T = unknown> = { fail: T }
 export declare type Failed<T = unknown> = { failed: T }
 export declare type Failure<T = unknown> = { failure: T }
@@ -431,9 +461,11 @@ export declare type Imports<T = unknown> = { imports: T }
 export declare type Impressions<T = unknown> = { impressions: T }
 export declare type IncludePath<T = unknown> = { include_path: T }
 export declare type IncludePaths<T = unknown> = { include_paths: T }
+export declare type Increment<T = unknown> = { increment: T }
 export declare type Index<T = unknown> = { index: T }
 export declare type Info<T = unknown> = { info: T }
 export declare type Inject<T = unknown> = { inject: T }
+export declare type Insert<T = unknown> = { insert: T }
 export declare type Insights<T = unknown> = { insights: T }
 export declare type Installs<T = unknown> = { installs: T }
 export declare type Internal<T = unknown> = { internal: T }
@@ -493,6 +525,8 @@ export declare type LevelId<T = unknown> = { level_id: T }
 export declare type LevelIds<T = unknown> = { level_ids: T }
 export declare type Levels<T = unknown> = { levels: T }
 export declare type License<T = unknown> = { license: T }
+export declare type Limit<T = unknown> = { limit: T }
+export declare type Limited<T = unknown> = { limited: T }
 export declare type Link<T = unknown> = { link: T }
 export declare type Links<T = unknown> = { links: T }
 export declare type List<T = unknown> = { list: T }
@@ -517,6 +551,7 @@ export declare type LogGroups<T = unknown> = { log_groups: T }
 export declare type LogLevel<T = unknown> = { log_level: T }
 export declare type LogLevels<T = unknown> = { log_levels: T }
 export declare type Logger<T = unknown> = { logger: T }
+export declare type Logging<T = unknown> = { logging: T }
 export declare type Login<T = unknown> = { login: T }
 export declare type Logs<T = unknown> = { logs: T }
 export declare type Main<T = unknown> = { main: T }
@@ -524,6 +559,11 @@ export declare type Margin<T = unknown> = { margin: T }
 export declare type MarginBottom<T = unknown> = { margin_bottom: T }
 export declare type MarginLeft<T = unknown> = { margin_left: T }
 export declare type MarginRight<T = unknown> = { margin_right: T }
+export declare type Marked<T = unknown> = { marked: T }
+export declare type Master<T = unknown> = { master: T }
+export declare type MasterId<T = unknown> = { master_id: T }
+export declare type MasterIds<T = unknown> = { master_ids: T }
+export declare type Masters<T = unknown> = { masters: T }
 export declare type Material<T = unknown> = { material: T }
 export declare type MaterialId<T = unknown> = { material_id: T }
 export declare type MaterialIds<T = unknown> = { material_ids: T }
@@ -564,6 +604,7 @@ export declare type Modes<T = unknown> = { modes: T }
 export declare type Module<T = unknown> = { module: T }
 export declare type Modules<T = unknown> = { modules: T }
 export declare type Months<T = unknown> = { months: T }
+export declare type Multiplier<T = unknown> = { multiplier: T }
 export declare type Name<T = unknown> = { name: T }
 export declare type Next<T = unknown> = { next: T }
 export declare type NextPageUrl<T = unknown> = { next_page_url: T }
@@ -595,6 +636,10 @@ export declare type OffsetX<T = unknown> = { offset_x: T }
 export declare type OffsetY<T = unknown> = { offset_y: T }
 export declare type OffsetZ<T = unknown> = { offset_z: T }
 export declare type Offsets<T = unknown> = { offsets: T }
+export declare type OnCreate<T = unknown> = { on_create: T }
+export declare type OnDelete<T = unknown> = { on_delete: T }
+export declare type OnUpdate<T = unknown> = { on_update: T }
+export declare type Option<T = unknown> = { option: T }
 export declare type Options<T = unknown> = { options: T }
 export declare type Order<T = unknown> = { order: T }
 export declare type OrderId<T = unknown> = { order_id: T }
@@ -666,6 +711,7 @@ export declare type Players<T = unknown> = { players: T }
 export declare type Point<T = unknown> = { point: T }
 export declare type PointId<T = unknown> = { point_id: T }
 export declare type PointIds<T = unknown> = { point_ids: T }
+export declare type Pointer<T = unknown> = { pointer: T }
 export declare type Points<T = unknown> = { points: T }
 export declare type Port<T = unknown> = { port: T }
 export declare type Possition<T = unknown> = { possition: T }
@@ -739,6 +785,8 @@ export declare type QueueUrl<T = unknown> = { queue_url: T }
 export declare type Queues<T = unknown> = { queues: T }
 export declare type Radius<T = unknown> = { radius: T }
 export declare type Ratio<T = unknown> = { ratio: T }
+export declare type Raw<T = unknown> = { raw: T }
+export declare type RawBody<T = unknown> = { raw_body: T }
 export declare type Reason<T = unknown> = { reason: T }
 export declare type ReasonId<T = unknown> = { reason_id: T }
 export declare type ReasonIds<T = unknown> = { reason_ids: T }
@@ -767,6 +815,10 @@ export declare type ReplicaIds<T = unknown> = { replica_ids: T }
 export declare type ReplicaName<T = unknown> = { replica_name: T }
 export declare type ReplicaUrl<T = unknown> = { replica_url: T }
 export declare type Replicas<T = unknown> = { replicas: T }
+export declare type Replication<T = unknown> = { replication: T }
+export declare type ReplicationId<T = unknown> = { replication_id: T }
+export declare type ReplicationIds<T = unknown> = { replication_ids: T }
+export declare type Replications<T = unknown> = { replications: T }
 export declare type Report<T = unknown> = { report: T }
 export declare type ReportId<T = unknown> = { report_id: T }
 export declare type ReportIds<T = unknown> = { report_ids: T }
@@ -808,6 +860,10 @@ export declare type RotationZ<T = unknown> = { rotation_z: T }
 export declare type Rotations<T = unknown> = { rotations: T }
 export declare type Route<T = unknown> = { route: T }
 export declare type Routes<T = unknown> = { routes: T }
+export declare type Row<T = unknown> = { row: T }
+export declare type RowId<T = unknown> = { row_id: T }
+export declare type RowIds<T = unknown> = { row_ids: T }
+export declare type Rows<T = unknown> = { rows: T }
 export declare type SETID<T = unknown> = { setid: T }
 export declare type SSL<T = unknown> = { ssl: T }
 export declare type Salt<T = unknown> = { salt: T }
@@ -829,6 +885,9 @@ export declare type Secondary<T = unknown> = { secondary: T }
 export declare type Seconds<T = unknown> = { seconds: T }
 export declare type Secret<T = unknown> = { secret: T }
 export declare type SecretKey<T = unknown> = { secret_key: T }
+export declare type Select<T = unknown> = { select: T }
+export declare type Selected<T = unknown> = { selected: T }
+export declare type Selector<T = unknown> = { selector: T }
 export declare type Sender<T = unknown> = { sender: T }
 export declare type SenderId<T = unknown> = { sender_id: T }
 export declare type SenderIds<T = unknown> = { sender_ids: T }
@@ -859,8 +918,17 @@ export declare type SetId<T = unknown> = { set_id: T }
 export declare type SetIds<T = unknown> = { set_ids: T }
 export declare type Sets<T = unknown> = { sets: T }
 export declare type Settings<T = unknown> = { settings: T }
+export declare type Setup<T = unknown> = { setup: T }
+export declare type SetupId<T = unknown> = { setup_id: T }
+export declare type SetupIds<T = unknown> = { setup_ids: T }
+export declare type Setups<T = unknown> = { setups: T }
 export declare type Signature<T = unknown> = { signature: T }
 export declare type Size<T = unknown> = { size: T }
+export declare type Skip<T = unknown> = { skip: T }
+export declare type Slave<T = unknown> = { slave: T }
+export declare type SlaveId<T = unknown> = { slave_id: T }
+export declare type SlaveIds<T = unknown> = { slave_ids: T }
+export declare type Slaves<T = unknown> = { slaves: T }
 export declare type Snapshot<T = unknown> = { snapshot: T }
 export declare type SnapshotId<T = unknown> = { snapshot_id: T }
 export declare type SnapshotIds<T = unknown> = { snapshot_ids: T }
@@ -902,6 +970,7 @@ export declare type Subscriptions<T = unknown> = { subscriptions: T }
 export declare type Success<T = unknown> = { success: T }
 export declare type Sum<T = unknown> = { sum: T }
 export declare type Summary<T = unknown> = { summary: T }
+export declare type Synchronize<T = unknown> = { synchronize: T }
 export declare type Table<T = unknown> = { table: T }
 export declare type TableId<T = unknown> = { table_id: T }
 export declare type TableIds<T = unknown> = { table_ids: T }
@@ -911,6 +980,7 @@ export declare type Tag<T = unknown> = { tag: T }
 export declare type TagId<T = unknown> = { tag_id: T }
 export declare type TagIds<T = unknown> = { tag_ids: T }
 export declare type Tags<T = unknown> = { tags: T }
+export declare type Take<T = unknown> = { take: T }
 export declare type Target<T = unknown> = { target: T }
 export declare type TargetId<T = unknown> = { target_id: T }
 export declare type TargetIds<T = unknown> = { target_ids: T }
@@ -962,6 +1032,7 @@ export declare type Transaction<T = unknown> = { transaction: T }
 export declare type TransactionId<T = unknown> = { transaction_id: T }
 export declare type TransactionIds<T = unknown> = { transaction_ids: T }
 export declare type Transactions<T = unknown> = { transactions: T }
+export declare type Transformer<T = unknown> = { transformer: T }
 export declare type Trial<T = unknown> = { trial: T }
 export declare type Ttl<T = unknown> = { ttl: T }
 export declare type TtlMs<T = unknown> = { ttl_ms: T }
@@ -975,6 +1046,7 @@ export declare type Unique<T = unknown> = { unique: T }
 export declare type UniqueId<T = unknown> = { unique_id: T }
 export declare type UniqueIds<T = unknown> = { unique_ids: T }
 export declare type Uniques<T = unknown> = { uniques: T }
+export declare type Update<T = unknown> = { update: T }
 export declare type UpdatedAt<T = unknown> = { updated_at: T }
 export declare type Uri<T = unknown> = { uri: T }
 export declare type Url<T = unknown> = { url: T }
@@ -1011,6 +1083,7 @@ export declare type Visitor<T = unknown> = { visitor: T }
 export declare type VisitorId<T = unknown> = { visitor_id: T }
 export declare type VisitorIds<T = unknown> = { visitor_ids: T }
 export declare type Visitors<T = unknown> = { visitors: T }
+export declare type Warning<T = unknown> = { warning: T }
 export declare type Web<T = unknown> = { web: T }
 export declare type Webhook<T = unknown> = { webhook: T }
 export declare type WebhookUrl<T = unknown> = { webhook_url: T }
@@ -1018,6 +1091,7 @@ export declare type Webhooks<T = unknown> = { webhooks: T }
 export declare type Week<T = unknown> = { week: T }
 export declare type Weeks<T = unknown> = { weeks: T }
 export declare type Weight<T = unknown> = { weight: T }
+export declare type Where<T = unknown> = { where: T }
 export declare type Width<T = unknown> = { width: T }
 export declare type X<T = unknown> = { x: T }
 export declare type Y<T = unknown> = { y: T }
