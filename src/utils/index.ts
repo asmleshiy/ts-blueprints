@@ -25,11 +25,11 @@ export declare type Mutable<T> = {
 }
 
 export declare type Reflect<T extends object> = {
-  [key in keyof T]?: T[key]
+  [K in keyof T]?: T[K]
 }
 
 export declare type Malformed<T extends object> = {
-  [key in keyof T]?: unknown
+  [K in keyof T]?: unknown
 }
 
 export declare type DeepPartial<T> = {

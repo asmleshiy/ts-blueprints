@@ -1,7 +1,16 @@
 {
   "name": "ts-blueprints",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "TypeScript blueprints",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "pnpm run build",
+    "build": "tsup",
+    "lint": "tsc"
+  },
   "author": "asmleshiy",
   "repository": {
     "type": "git",
@@ -20,5 +29,8 @@
     "angular",
     "types"
   ],
-  "license": "MIT"
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  }
 }
