@@ -12,6 +12,7 @@
     "noEmit": true,
     "outDir": "dist",
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
   },
   "include": [
     "src/**/*.ts"

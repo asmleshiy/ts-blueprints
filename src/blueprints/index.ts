@@ -50,6 +50,13 @@ const assign = <
     }
     validate(blueprint)
   }
+  else {
+    for (const key in blueprint) {
+      if (key in args) {
+        blueprint[key] = (args as any)[key]
+      }
+    }
+  }
   return blueprint
 }
 
