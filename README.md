@@ -4,7 +4,8 @@ This library provides easy-to-use type templates to help you design models with 
 
 #### Installation
 
-> `npm i ts-blueprints typescript`
+> `npm i ts-blueprints`
+> `npm i -D typescript`
 
 #### Usage
 
@@ -39,10 +40,10 @@ export type User = Combine<
   & PersonalInfo
 >
 
-export type EditUserPesonalInfoArgs = Subtract<
-  User,
+export type EditUserPersonalInfoArgs = Subtract<
   & Entity
   & Credentials
+  , User
 >
 
 export type EditUserPasswordArgs = Select<
@@ -56,10 +57,10 @@ export type EditUserPasswordArgs = Select<
 `interfaces.ts`
 
 ```
-import { EditUserPasswordArgs, EditUserPesonalInfoArgs } from "./types"
+import { EditUserPasswordArgs, EditUserPersonalInfoArgs } from "./types"
 
 export interface IEditableUser {
-  editPersonalInfo (args: EditUserPesonalInfoArgs): void
+  editPersonalInfo (args: EditUserPersonalInfoArgs): void
   editPassword (args: EditUserPasswordArgs): void
 }
 ```
@@ -68,7 +69,7 @@ export interface IEditableUser {
 
 ```
 import { IEditableUser } from "./interfaces"
-import { EditUserPasswordArgs, EditUserPesonalInfoArgs, User } from "./types"
+import { EditUserPasswordArgs, EditUserPersonalInfoArgs, User } from "./types"
 
 export class UserEntity implements User, IEditableUser {
 
@@ -84,7 +85,7 @@ export class UserEntity implements User, IEditableUser {
   first_name?: string
   last_name?: string
 
-  editPersonalInfo ({ email, age, first_name, last_name }: EditUserPesonalInfoArgs): void {
+  editPersonalInfo ({ email, age, first_name, last_name }: EditUserPersonalInfoArgs): void {
     // TODO: implement
   }
 

@@ -1,7 +1,7 @@
 import { isNil } from "../operators"
 import { Validate } from "../snakecase"
 import { Dictionary } from "../types"
-import { Checkbox, Combine, ObjectKeys } from "../utils"
+import { Checkbox, Combine, Difference, Intersection, Merge, ObjectKeys } from "../utils"
 
 export type Blueprint<T extends object = object> = Record<ObjectKeys<T>, undefined>
 
@@ -76,7 +76,70 @@ const typeOf = <
   return true
 }
 
+const difference = <
+  T1 extends object,
+  T2 extends object,
+> (
+  a: T1, b: T2,
+): Difference<T1, T2> => {
+  const keys: string[] = [
+    ...new Set(([] as string[]).concat(
+      Object.keys(a).filter(k => !(k in b)),
+      Object.keys(b).filter(k => !(k in a)),
+    ))
+  ].sort()
+  const dict: Dictionary<string, unknown> = {}
+  for (const key of keys) {
+    if (key in a) dict[key] = (a as any)[key]
+    else dict[key] = (b as any)[key]
+  }
+  return dict as any
+}
+
+const intersection = <
+  T1 extends object,
+  T2 extends object,
+> (
+  a: T1, b: T2,
+): Intersection<T1, T2> => {
+  const keys: string[] = [
+    ...new Set(([] as string[]).concat(
+      Object.keys(a).filter(k => (k in b)),
+      Object.keys(b).filter(k => (k in a)),
+    ))
+  ].sort()
+  const dict: Dictionary<string, unknown> = {}
+  for (const key of keys) {
+    dict[key] = (a as any)[key]
+    dict[key] = (b as any)[key]
+  }
+  return dict as any
+}
+
+const merge = <
+  T1 extends object,
+  T2 extends object,
+> (
+  a: T1, b: T2,
+): Merge<T1, T2> => {
+  const keys: string[] = [
+    ...new Set(([] as string[]).concat(
+      Object.keys(a),
+      Object.keys(b),
+    ))
+  ].sort()
+  const dict: Dictionary<string, unknown> = {}
+  for (const key of keys) {
+    if (key in a) dict[key] = (a as any)[key]
+    if (key in b) dict[key] = (b as any)[key]
+  }
+  return dict as any
+}
+
 export const Blueprints = Object.freeze({
   assign,
   typeOf,
+  difference,
+  intersection,
+  merge,
 } as const)
