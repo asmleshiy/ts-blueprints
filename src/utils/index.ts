@@ -6,31 +6,25 @@ export type Combine<T> = {
 export type Select<
   TSelect extends object,
   TFrom extends { [k in keyof TSelect]: any },
-> = {
-  [P in Extract<keyof TFrom, keyof TSelect>]: TFrom[P]
-} & {}
+> = Pick<TFrom, keyof TSelect>
 
 export type Subtract<
   TSubtract extends object,
   TFrom extends { [k in keyof TSubtract]: any },
-> = {
-  [P in Exclude<keyof TFrom, keyof TSubtract>]: TFrom[P]
-} & {}
+> = Omit<TFrom, keyof TSubtract>
 
 export type Difference<
   T1 extends object,
   T2 extends object,
 > = Combine<
-  & { [K in Exclude<keyof T1, keyof T2>]: T1[K] }
-  & { [K in Exclude<keyof T2, keyof T1>]: T2[K] }
+  & Omit<T1, keyof T2>
+  & Omit<T2, keyof T1>
 >
 
 export type Intersection<
   T1 extends object,
   T2 extends object,
-> = Combine<
-  & { [K in Exclude<keyof T2, keyof Difference<T1, T2>>]: T2[K] }
->
+> = Omit<T2, keyof Difference<T1, T2>>
 
 export type Merge<
   T1 extends object,
@@ -44,16 +38,16 @@ export type Override<
   TFields extends object,
   TFrom extends { [K in keyof TFields]: any },
 > = Combine<
-  & { [K in Exclude<keyof TFrom, keyof Intersection<TFrom, TFields>>]: TFrom[K] }
-  & { [K in Exclude<keyof TFields, keyof Difference<TFrom, TFrom>>]: TFields[K] }
+  & Omit<TFrom, keyof Intersection<TFrom, TFields>>
+  & Omit<TFields, keyof Difference<TFrom, TFields>>
 >
 
 export type Extend<
   TFields extends object,
   TFrom extends object,
 > = Combine<
-  & { [K in Exclude<keyof TFrom, keyof Intersection<TFrom, TFields>>]: TFrom[K] }
-  & { [K in Exclude<keyof TFields, keyof Difference<TFrom, TFrom>>]: TFields[K] }
+  & Omit<TFrom, keyof Intersection<TFrom, TFields>>
+  & TFields
 >
 
 export type ObjectKeys<T> = {

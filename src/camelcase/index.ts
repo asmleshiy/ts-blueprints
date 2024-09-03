@@ -65,6 +65,7 @@ export type Align<T = unknown> = { align: T }
 export type All<T = unknown> = { all: T }
 export type Amount<T = unknown> = { amount: T }
 export type Amplitude<T = unknown> = { amplitude: T }
+export type AmplitudeId<T = unknown> = { amplitudeId: T }
 export type Android<T = unknown> = { android: T }
 export type Answer<T = unknown> = { answer: T }
 export type AnswerId<T = unknown> = { answerId: T }
@@ -577,6 +578,7 @@ export type GeoLocations<T = unknown> = { geoLocations: T }
 export type Git<T = unknown> = { git: T }
 export type Gitignore<T = unknown> = { gitignore: T }
 export type GivenName<T = unknown> = { givenName: T }
+export type Global<T = unknown> = { global: T }
 export type Google<T = unknown> = { google: T }
 export type Group<T = unknown> = { group: T }
 export type GroupId<T = unknown> = { groupId: T }
@@ -663,9 +665,9 @@ export type Interval<T = unknown> = { interval: T }
 export type IntervalMs<T = unknown> = { intervalMs: T }
 export type IntervalSec<T = unknown> = { intervalSec: T }
 export type IntroductoryPriceInfo<T = unknown> = { introductoryPriceInfo: T }
-export type InvoiceBillingPeriodEndedAt<T = unknown> = { invoiceBillingPeriodEndedAt: T }
 export type Invoice<T = unknown> = { invoice: T }
 export type InvoiceAmount<T = unknown> = { invoiceAmount: T }
+export type InvoiceBillingPeriodEndedAt<T = unknown> = { invoiceBillingPeriodEndedAt: T }
 export type InvoiceBillingPeriodStartedAt<T = unknown> = { invoiceBillingPeriodStartedAt: T }
 export type InvoiceCreatedAt<T = unknown> = { invoiceCreatedAt: T }
 export type InvoiceId<T = unknown> = { invoiceId: T }
@@ -682,6 +684,7 @@ export type IsDebug<T = unknown> = { isDebug: T }
 export type IsDirty<T = unknown> = { isDirty: T }
 export type IsDynamicCreative<T = unknown> = { isDynamicCreative: T }
 export type IsEnable<T = unknown> = { isEnable: T }
+export type IsGlobal<T = unknown> = { isGlobal: T }
 export type IsNullable<T = unknown> = { isNullable: T }
 export type IsPreferred<T = unknown> = { isPreferred: T }
 export type IsPrivate<T = unknown> = { isPrivate: T }
@@ -1376,6 +1379,10 @@ export type SubscriberId<T = unknown> = { subscriberId: T }
 export type SubscriberIds<T = unknown> = { subscriberIds: T }
 export type Subscribers<T = unknown> = { subscribers: T }
 export type Subscription<T = unknown> = { subscription: T }
+export type SubscriptionCancelCode<T = unknown> = { subscriptionCancelCode: T }
+export type SubscriptionCancelMessage<T = unknown> = { subscriptionCancelMessage: T }
+export type SubscriptionCancellationRequestedAt<T = unknown> = { subscriptionCancellationRequestedAt: T }
+export type SubscriptionCancelledAt<T = unknown> = { subscriptionCancelledAt: T }
 export type SubscriptionExpiredAt<T = unknown> = { subscriptionExpiredAt: T }
 export type SubscriptionId<T = unknown> = { subscriptionId: T }
 export type SubscriptionIds<T = unknown> = { subscriptionIds: T }
