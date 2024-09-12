@@ -109,3 +109,16 @@ export type Checkbox<T, Keys extends keyof T = keyof T> =
 export type KeysSelector<T extends object> = Checkbox<{
   [K in ObjectKeys<T>]: true
 }>
+
+export type SwitchSchema<
+  TIn extends object,
+  TSchema extends { [K in keyof TIn]: string },
+> = Combine<{
+  [K in keyof TSchema as TSchema[K]]: K extends keyof TIn ? TIn[K] : never
+}>
+
+export type FlipSchema<
+  T extends Record<string, string>
+> = Combine<{
+  [K in keyof T as T[K]]: K
+}>

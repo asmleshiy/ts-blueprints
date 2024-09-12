@@ -1,7 +1,16 @@
 import { isNil } from "../operators"
 import { Validate } from "../snakecase"
 import { Dictionary } from "../types"
-import { Checkbox, Combine, Difference, Intersection, Merge, ObjectKeys } from "../utils"
+import {
+  Checkbox,
+  Combine,
+  Difference,
+  FlipSchema,
+  Intersection,
+  Merge,
+  ObjectKeys,
+  SwitchSchema
+} from "../utils"
 
 export type Blueprint<T extends object = object> = Record<ObjectKeys<T>, undefined>
 
@@ -136,10 +145,35 @@ const merge = <
   return dict as any
 }
 
+const switchSchema = <
+  TIn extends object,
+  TSchema extends { [K in keyof TIn]: string },
+> (args: TIn, schema: TSchema): SwitchSchema<TIn, TSchema> => {
+  const dict: Dictionary<string, unknown> = {}
+  for (const key in args) {
+    if (key in schema) {
+      dict[schema[key]] = args[key]
+    }
+  }
+  return dict as any
+}
+
+const flipSchema = <
+  TSchema extends Record<string, string>,
+> (schema: TSchema): FlipSchema<TSchema> => {
+  const dict: Dictionary<string, string> = {}
+  for (const key in schema) {
+    dict[schema[key] as string] = key
+  }
+  return dict as any
+}
+
 export const Blueprints = Object.freeze({
   assign,
   typeOf,
   difference,
   intersection,
   merge,
+  switchSchema,
+  flipSchema,
 } as const)
