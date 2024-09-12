@@ -154,6 +154,11 @@ export type Bundle<T = unknown> = { bundle: T }
 export type BundleId<T = unknown> = { bundleId: T }
 export type BundleIds<T = unknown> = { bundleIds: T }
 export type Bundles<T = unknown> = { bundles: T }
+export type BusinessManager<T = unknown> = { businessManager: T }
+export type BusinessManagerId<T = unknown> = { businessManagerId: T }
+export type BusinessManagerIds<T = unknown> = { businessManagerIds: T }
+export type BusinessManagerName<T = unknown> = { businessManagerName: T }
+export type BusinessManagers<T = unknown> = { businessManagers: T }
 export type BusinessVideoId<T = unknown> = { businessVideoId: T }
 export type BuyingType<T = unknown> = { buyingType: T }
 export type CA<T = unknown> = { ca: T }
@@ -214,6 +219,7 @@ export type Client<T = unknown> = { client: T }
 export type ClientId<T = unknown> = { clientId: T }
 export type ClientIds<T = unknown> = { clientIds: T }
 export type ClientIpAddress<T = unknown> = { clientIpAddress: T }
+export type ClientSecret<T = unknown> = { clientSecret: T }
 export type ClientUserAgent<T = unknown> = { clientUserAgent: T }
 export type Clients<T = unknown> = { clients: T }
 export type CloseConnectionTimeout<T = unknown> = { closeConnectionTimeout: T }
@@ -283,6 +289,7 @@ export type Count<T = unknown> = { count: T }
 export type Countries<T = unknown> = { countries: T }
 export type Country<T = unknown> = { country: T }
 export type CountryCode<T = unknown> = { countryCode: T }
+export type CountryOrRegion<T = unknown> = { countryOrRegion: T }
 export type Create<T = unknown> = { create: T }
 export type CreatedAt<T = unknown> = { createdAt: T }
 export type Creative<T = unknown> = { creative: T }
@@ -292,6 +299,10 @@ export type CreativeIds<T = unknown> = { creativeIds: T }
 export type CreativeName<T = unknown> = { creativeName: T }
 export type Creatives<T = unknown> = { creatives: T }
 export type Credentials<T = unknown> = { credentials: T }
+export type CredentialsId<T = unknown> = { credentialsId: T }
+export type CredentialsIds<T = unknown> = { credentialsIds: T }
+export type CredentialsKey<T = unknown> = { credentialsKey: T }
+export type CredentialsKeys<T = unknown> = { credentialsKeys: T }
 export type Csv<T = unknown> = { csv: T }
 export type Currencies<T = unknown> = { currencies: T }
 export type Currency<T = unknown> = { currency: T }
@@ -493,6 +504,7 @@ export type Expired<T = unknown> = { expired: T }
 export type ExpiredToken<T = unknown> = { expiredToken: T }
 export type ExpiredTokens<T = unknown> = { expiredTokens: T }
 export type Expires<T = unknown> = { expires: T }
+export type ExpiresIn<T = unknown> = { expiresIn: T }
 export type Export<T = unknown> = { export: T }
 export type Exports<T = unknown> = { exports: T }
 export type ExposedHeaders<T = unknown> = { exposedHeaders: T }
@@ -580,7 +592,10 @@ export type Gitignore<T = unknown> = { gitignore: T }
 export type GivenName<T = unknown> = { givenName: T }
 export type Global<T = unknown> = { global: T }
 export type Google<T = unknown> = { google: T }
+export type GrantType<T = unknown> = { grantType: T }
+export type Granularity<T = unknown> = { granularity: T }
 export type Group<T = unknown> = { group: T }
+export type GroupBy<T = unknown> = { groupBy: T }
 export type GroupId<T = unknown> = { groupId: T }
 export type GroupIds<T = unknown> = { groupIds: T }
 export type GroupName<T = unknown> = { groupName: T }
@@ -760,6 +775,7 @@ export type Load<T = unknown> = { load: T }
 export type Local<T = unknown> = { local: T }
 export type LocalEnv<T = unknown> = { localEnv: T }
 export type LocalOffset<T = unknown> = { localOffset: T }
+export type LocalSpend<T = unknown> = { localSpend: T }
 export type Locale<T = unknown> = { locale: T }
 export type LocaleId<T = unknown> = { localeId: T }
 export type LocaleIds<T = unknown> = { localeIds: T }
@@ -817,6 +833,7 @@ export type MerchantId<T = unknown> = { merchantId: T }
 export type MerchantIds<T = unknown> = { merchantIds: T }
 export type Merchants<T = unknown> = { merchants: T }
 export type Message<T = unknown> = { message: T }
+export type MessageCode<T = unknown> = { messageCode: T }
 export type MessageId<T = unknown> = { messageId: T }
 export type MessageIds<T = unknown> = { messageIds: T }
 export type Messages<T = unknown> = { messages: T }
@@ -914,6 +931,7 @@ export type Options<T = unknown> = { options: T }
 export type Or<T = unknown> = { or: T }
 export type Order<T = unknown> = { order: T }
 export type OrderAmount<T = unknown> = { orderAmount: T }
+export type OrderBy<T = unknown> = { orderBy: T }
 export type OrderCurrency<T = unknown> = { orderCurrency: T }
 export type OrderDescription<T = unknown> = { orderDescription: T }
 export type OrderId<T = unknown> = { orderId: T }
@@ -922,6 +940,13 @@ export type OrderMetadata<T = unknown> = { orderMetadata: T }
 export type OrderStatus<T = unknown> = { orderStatus: T }
 export type Ordered<T = unknown> = { ordered: T }
 export type Orders<T = unknown> = { orders: T }
+export type OrgId<T = unknown> = { orgId: T }
+export type OrgIds<T = unknown> = { orgIds: T }
+export type Organization<T = unknown> = { organization: T }
+export type OrganizationId<T = unknown> = { organizationId: T }
+export type OrganizationIds<T = unknown> = { organizationIds: T }
+export type OrganizationName<T = unknown> = { organizationName: T }
+export type Organizations<T = unknown> = { organizations: T }
 export type Origin<T = unknown> = { origin: T }
 export type OriginId<T = unknown> = { originId: T }
 export type OriginIds<T = unknown> = { originIds: T }
@@ -1035,6 +1060,8 @@ export type Priority<T = unknown> = { priority: T }
 export type Private<T = unknown> = { private: T }
 export type PrivateEmail<T = unknown> = { privateEmail: T }
 export type PrivateKey<T = unknown> = { privateKey: T }
+export type PrivateKeyPath<T = unknown> = { privateKeyPath: T }
+export type PrivateKeys<T = unknown> = { privateKeys: T }
 export type Process<T = unknown> = { process: T }
 export type ProcessId<T = unknown> = { processId: T }
 export type ProcessIds<T = unknown> = { processIds: T }
@@ -1181,6 +1208,7 @@ export type Report<T = unknown> = { report: T }
 export type ReportId<T = unknown> = { reportId: T }
 export type ReportIds<T = unknown> = { reportIds: T }
 export type ReportType<T = unknown> = { reportType: T }
+export type ReportingDataResponse<T = unknown> = { reportingDataResponse: T }
 export type Reports<T = unknown> = { reports: T }
 export type Repositories<T = unknown> = { repositories: T }
 export type Repository<T = unknown> = { repository: T }
@@ -1210,6 +1238,9 @@ export type ResultIds<T = unknown> = { resultIds: T }
 export type Results<T = unknown> = { results: T }
 export type Retry<T = unknown> = { retry: T }
 export type RetryCount<T = unknown> = { tryCount: T }
+export type ReturnGrandTotals<T = unknown> = { returnGrandTotals: T }
+export type ReturnRecordsWithNoMetrics<T = unknown> = { returnRecordsWithNoMetrics: T }
+export type ReturnRowTotals<T = unknown> = { returnRowTotals: T }
 export type Review<T = unknown> = { review: T }
 export type ReviewId<T = unknown> = { reviewId: T }
 export type ReviewIds<T = unknown> = { reviewIds: T }
@@ -1334,6 +1365,7 @@ export type SnapshotIds<T = unknown> = { snapshotIds: T }
 export type SnapshotUrl<T = unknown> = { snapshotUrl: T }
 export type Snapshots<T = unknown> = { snapshots: T }
 export type Sort<T = unknown> = { sort: T }
+export type SortOrder<T = unknown> = { sortOrder: T }
 export type Source<T = unknown> = { source: T }
 export type SpecialAdCategories<T = unknown> = { specialAdCategories: T }
 export type Spend<T = unknown> = { spend: T }
@@ -1417,6 +1449,11 @@ export type TaskId<T = unknown> = { taskId: T }
 export type TaskIds<T = unknown> = { taskIds: T }
 export type Tasks<T = unknown> = { tasks: T }
 export type Taxes<T = unknown> = { taxes: T }
+export type Team<T = unknown> = { team: T }
+export type TeamId<T = unknown> = { teamId: T }
+export type TeamIds<T = unknown> = { teamIds: T }
+export type TeamName<T = unknown> = { teamName: T }
+export type Teams<T = unknown> = { teams: T }
 export type Template<T = unknown> = { template: T }
 export type TemplateId<T = unknown> = { templateId: T }
 export type TemplateIds<T = unknown> = { templateIds: T }
@@ -1441,6 +1478,7 @@ export type Time<T = unknown> = { time: T }
 export type TimeAccountTz<T = unknown> = { timeAccountTz: T }
 export type TimeRange<T = unknown> = { timeRange: T }
 export type TimeUtc<T = unknown> = { timeUtc: T }
+export type TimeZone<T = unknown> = { timeZone: T }
 export type Timeout<T = unknown> = { timeout: T }
 export type TimeoutMs<T = unknown> = { timeoutMs: T }
 export type TimeoutSec<T = unknown> = { timeoutSec: T }
