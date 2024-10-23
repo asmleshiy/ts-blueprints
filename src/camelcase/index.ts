@@ -31,6 +31,8 @@ export type AdId<T = unknown> = { adId: T }
 export type AdIds<T = unknown> = { adIds: T }
 export type AdName<T = unknown> = { adName: T }
 export type Add<T = unknown> = { add: T }
+export type AdditionalField<T = unknown> = { additionalField: T }
+export type AdditionalFields<T = unknown> = { additionalFields: T }
 export type Address<T = unknown> = { address: T }
 export type Addresses<T = unknown> = { addresses: T }
 export type Adgroups<T = unknown> = { adgroups: T }
@@ -49,6 +51,24 @@ export type Advertiser<T = unknown> = { advertiser: T }
 export type AdvertiserId<T = unknown> = { advertiserId: T }
 export type AdvertiserIds<T = unknown> = { advertiserIds: T }
 export type Advertisers<T = unknown> = { advertisers: T }
+export type AfAd<T = unknown> = { afAd: T }
+export type AfAdId<T = unknown> = { afAdId: T }
+export type AfAdType<T = unknown> = { afAdType: T }
+export type AfAdset<T = unknown> = { afAdset: T }
+export type AfAdsetId<T = unknown> = { afAdsetId: T }
+export type AfAttributionLookback<T = unknown> = { afAttributionLookback: T }
+export type AfCId<T = unknown> = { afCId: T }
+export type AfChannel<T = unknown> = { afChannel: T }
+export type AfCostCurrency<T = unknown> = { afCostCurrency: T }
+export type AfCostValue<T = unknown> = { afCostValue: T }
+export type AfCurrency<T = unknown> = { afCurrency: T }
+export type AfKeywords<T = unknown> = { afKeywords: T }
+export type AfRevenue<T = unknown> = { afRevenue: T }
+export type AfSetid<T = unknown> = { afSiteid: T }
+export type AfSub1<T = unknown> = { afSub1: T }
+export type AfSub2<T = unknown> = { afSub2: T }
+export type AfSub3<T = unknown> = { afSub3: T }
+export type AfSub4<T = unknown> = { afSub4: T }
 export type Age<T = unknown> = { age: T }
 export type AgeGroup<T = unknown> = { ageGroup: T }
 export type AgeMax<T = unknown> = { ageMax: T }
@@ -79,6 +99,9 @@ export type ApiUrl<T = unknown> = { apiUrl: T }
 export type App<T = unknown> = { app: T }
 export type AppId<T = unknown> = { appId: T }
 export type AppIds<T = unknown> = { appIds: T }
+export type AppName<T = unknown> = { appName: T }
+export type AppType<T = unknown> = { appType: T }
+export type AppVersion<T = unknown> = { appVersion: T }
 export type Apple<T = unknown> = { apple: T }
 export type AppleUserId<T = unknown> = { appleUserId: T }
 export type Application<T = unknown> = { application: T }
@@ -97,11 +120,14 @@ export type AssetId<T = unknown> = { assetId: T }
 export type AssetIds<T = unknown> = { assetIds: T }
 export type AssetName<T = unknown> = { assetName: T }
 export type Assets<T = unknown> = { assets: T }
+export type Att<T = unknown> = { att: T }
 export type Attempt<T = unknown> = { attempt: T }
 export type Attempts<T = unknown> = { attempts: T }
 export type Attribute<T = unknown> = { attribute: T }
 export type AttributeId<T = unknown> = { attributeId: T }
 export type AttributeIds<T = unknown> = { attributeIds: T }
+export type AttributedTouchTime<T = unknown> = { attributedTouchTime: T }
+export type AttributedTouchType<T = unknown> = { attributedTouchType: T }
 export type Attributes<T = unknown> = { attributes: T }
 export type AudienceNetworkPositions<T = unknown> = { audienceNetworkPositions: T }
 export type Auth<T = unknown> = { auth: T }
@@ -131,6 +157,8 @@ export type Block<T = unknown> = { block: T }
 export type BlockId<T = unknown> = { blockId: T }
 export type BlockIds<T = unknown> = { blockIds: T }
 export type Blocked<T = unknown> = { blocked: T }
+export type BlockedReason<T = unknown> = { blockedReason: T }
+export type BlockedSubReason<T = unknown> = { blockedSubReason: T }
 export type Blocks<T = unknown> = { blocks: T }
 export type Blueprint<T = unknown> = { blueprint: T }
 export type BlueprintId<T = unknown> = { blueprintId: T }
@@ -175,6 +203,7 @@ export type CampaignId<T = unknown> = { campaignId: T }
 export type CampaignIds<T = unknown> = { campaignIds: T }
 export type CampaignName<T = unknown> = { campaignName: T }
 export type CampaignNames<T = unknown> = { campaignNames: T }
+export type CampaignType<T = unknown> = { campaignType: T }
 export type Campaigns<T = unknown> = { campaigns: T }
 export type Cancel<T = unknown> = { cancel: T }
 export type CancelReason<T = unknown> = { cancelReason: T }
@@ -270,10 +299,16 @@ export type ContentId<T = unknown> = { contentId: T }
 export type ContentIds<T = unknown> = { contentIds: T }
 export type Contents<T = unknown> = { contents: T }
 export type Context<T = unknown> = { context: T }
+export type Contributor1Campaign<T = unknown> = { contributor1Campaign: T }
+export type Contributor1MatchType<T = unknown> = { contributor1MatchType: T }
+export type Contributor1MediaSource<T = unknown> = { contributor1MediaSource: T }
+export type Contributor1TouchTime<T = unknown> = { contributor1TouchTime: T }
+export type Contributor1TouchType<T = unknown> = { contributor1TouchType: T }
 export type Controller<T = unknown> = { controller: T }
 export type Controllers<T = unknown> = { controllers: T }
 export type Conversion<T = unknown> = { conversion: T }
 export type ConversionDomain<T = unknown> = { conversionDomain: T }
+export type ConversionType<T = unknown> = { conversionType: T }
 export type Cookie<T = unknown> = { cookie: T }
 export type CookieId<T = unknown> = { cookieId: T }
 export type CookieIds<T = unknown> = { cookieIds: T }
@@ -316,6 +351,7 @@ export type CustomerEmail<T = unknown> = { customerEmail: T }
 export type CustomerId<T = unknown> = { customerId: T }
 export type CustomerIds<T = unknown> = { customerIds: T }
 export type Customers<T = unknown> = { customers: T }
+export type DMA<T = unknown> = { dma: T }
 export type DailyBudget<T = unknown> = { dailyBudget: T }
 export type Data<T = unknown> = { data: T }
 export type DataLevel<T = unknown> = { dataLevel: T }
@@ -380,8 +416,11 @@ export type DeveloperIds<T = unknown> = { developerIds: T }
 export type DeveloperPayload<T = unknown> = { developerPayload: T }
 export type Developers<T = unknown> = { developers: T }
 export type Device<T = unknown> = { device: T }
+export type DeviceCategory<T = unknown> = { deviceCategory: T }
+export type DeviceDownloadTime<T = unknown> = { deviceDownloadTime: T }
 export type DeviceId<T = unknown> = { deviceId: T }
 export type DeviceIds<T = unknown> = { deviceIds: T }
+export type DeviceModel<T = unknown> = { deviceModel: T }
 export type DevicePlatforms<T = unknown> = { devicePlatforms: T }
 export type Devices<T = unknown> = { devices: T }
 export type Dict<T = unknown> = { dict: T }
@@ -482,10 +521,15 @@ export type EventIds<T = unknown> = { eventIds: T }
 export type EventName<T = unknown> = { eventName: T }
 export type EventProperties<T = unknown> = { eventProperties: T }
 export type EventProperty<T = unknown> = { eventProperty: T }
+export type EventRevenue<T = unknown> = { eventRevenue: T }
+export type EventRevenueCurrency<T = unknown> = { eventRevenueCurrency: T }
+export type EventRevenueUsd<T = unknown> = { eventRevenueUsd: T }
+export type EventSource<T = unknown> = { eventSource: T }
 export type EventTime<T = unknown> = { eventTime: T }
 export type EventTimeMs<T = unknown> = { eventTimeMs: T }
 export type EventTimeSec<T = unknown> = { eventTimeSec: T }
 export type EventType<T = unknown> = { eventType: T }
+export type EventValue<T = unknown> = { eventValue: T }
 export type Events<T = unknown> = { events: T }
 export type Exact<T = unknown> = { exact: T }
 export type Example<T = unknown> = { example: T }
@@ -534,6 +578,8 @@ export type Field<T = unknown> = { field: T }
 export type FieldId<T = unknown> = { fieldId: T }
 export type FieldIds<T = unknown> = { fieldIds: T }
 export type FieldName<T = unknown> = { fieldName: T }
+export type FieldValue<T = unknown> = { fieldValue: T }
+export type FieldValues<T = unknown> = { fieldValues: T }
 export type Fields<T = unknown> = { fields: T }
 export type Fifo<T = unknown> = { fifo: T }
 export type File<T = unknown> = { file: T }
@@ -570,6 +616,8 @@ export type FormIds<T = unknown> = { formIds: T }
 export type Format<T = unknown> = { format: T }
 export type Formats<T = unknown> = { formats: T }
 export type Forms<T = unknown> = { forms: T }
+export type FraudReason<T = unknown> = { fraudReason: T }
+export type From<T = unknown> = { from: T }
 export type FromDate<T = unknown> = { fromDate: T }
 export type FromTime<T = unknown> = { fromTime: T }
 export type FromTimeMs<T = unknown> = { fromTimeMs: T }
@@ -585,6 +633,7 @@ export type GameId<T = unknown> = { gameId: T }
 export type GameIds<T = unknown> = { gameIds: T }
 export type Games<T = unknown> = { games: T }
 export type Gender<T = unknown> = { gender: T }
+export type GenderSelected<T = unknown> = { genderSelected: T }
 export type Genders<T = unknown> = { genders: T }
 export type GeoLocations<T = unknown> = { geoLocations: T }
 export type Git<T = unknown> = { git: T }
@@ -592,6 +641,7 @@ export type Gitignore<T = unknown> = { gitignore: T }
 export type GivenName<T = unknown> = { givenName: T }
 export type Global<T = unknown> = { global: T }
 export type Google<T = unknown> = { google: T }
+export type GpBroadcastReferrer<T = unknown> = { gpBroadcastReferrer: T }
 export type GrantType<T = unknown> = { grantType: T }
 export type Granularity<T = unknown> = { granularity: T }
 export type Group<T = unknown> = { group: T }
@@ -600,6 +650,11 @@ export type GroupId<T = unknown> = { groupId: T }
 export type GroupIds<T = unknown> = { groupIds: T }
 export type GroupName<T = unknown> = { groupName: T }
 export type Groups<T = unknown> = { groups: T }
+export type Handler<T = unknown> = { handler: T }
+export type HandlerId<T = unknown> = { handlerId: T }
+export type HandlerIds<T = unknown> = { handlerIds: T }
+export type HandlerName<T = unknown> = { handlerName: T }
+export type Handlers<T = unknown> = { handlers: T }
 export type Hash<T = unknown> = { hash: T }
 export type Header<T = unknown> = { header: T }
 export type HeaderKey<T = unknown> = { headerKey: T }
@@ -624,6 +679,7 @@ export type HttpCode<T = unknown> = { httpCode: T }
 export type HttpCodes<T = unknown> = { httpCodes: T }
 export type HttpOnly<T = unknown> = { httpOnly: T }
 export type HttpOptions<T = unknown> = { httpOptions: T }
+export type HttpReferrer<T = unknown> = { httpReferrer: T }
 export type HttpStatus<T = unknown> = { httpStatus: T }
 export type ID<T = unknown> = { id: T }
 export type IDFA<T = unknown> = { idfa: T }
@@ -671,6 +727,7 @@ export type Insert<T = unknown> = { insert: T }
 export type Insights<T = unknown> = { insights: T }
 export type InstagramActorId<T = unknown> = { instagramActorId: T }
 export type InstagramPositions<T = unknown> = { instagramPositions: T }
+export type InstallTime<T = unknown> = { installTime: T }
 export type Installs<T = unknown> = { installs: T }
 export type Internal<T = unknown> = { internal: T }
 export type InternalId<T = unknown> = { internalId: T }
@@ -700,11 +757,15 @@ export type IsDirty<T = unknown> = { isDirty: T }
 export type IsDynamicCreative<T = unknown> = { isDynamicCreative: T }
 export type IsEnable<T = unknown> = { isEnable: T }
 export type IsGlobal<T = unknown> = { isGlobal: T }
+export type IsLat<T = unknown> = { isLat: T }
 export type IsNullable<T = unknown> = { isNullable: T }
+export type IsOrganic<T = unknown> = { isOrganic: T }
 export type IsPreferred<T = unknown> = { isPreferred: T }
+export type IsPrimaryAttribution<T = unknown> = { isPrimaryAttribution: T }
 export type IsPrivate<T = unknown> = { isPrivate: T }
 export type IsPrivateEmail<T = unknown> = { isPrivateEmail: T }
 export type IsProduction<T = unknown> = { isProduction: T }
+export type IsRetargeting<T = unknown> = { isRetargeting: T }
 export type IsTrial<T = unknown> = { isTrial: T }
 export type IsUsed<T = unknown> = { isUsed: T }
 export type IsValid<T = unknown> = { isValid: T }
@@ -734,6 +795,8 @@ export type KeyName<T = unknown> = { keyName: T }
 export type KeyPath<T = unknown> = { keyPath: T }
 export type Keys<T = unknown> = { keys: T }
 export type Keyword<T = unknown> = { keyword: T }
+export type KeywordId<T = unknown> = { keywordId: T }
+export type KeywordMatchType<T = unknown> = { keywordMatchType: T }
 export type Keywords<T = unknown> = { keywords: T }
 export type Kind<T = unknown> = { kind: T }
 export type Label<T = unknown> = { label: T }
@@ -808,6 +871,7 @@ export type Logs<T = unknown> = { logs: T }
 export type LtvCurrency<T = unknown> = { ltvCurrency: T }
 export type LtvValue<T = unknown> = { ltvValue: T }
 export type Main<T = unknown> = { main: T }
+export type MajorDimension<T = unknown> = { majorDimension: T }
 export type Margin<T = unknown> = { margin: T }
 export type MarginBottom<T = unknown> = { marginBottom: T }
 export type MarginLeft<T = unknown> = { marginLeft: T }
@@ -819,6 +883,7 @@ export type Master<T = unknown> = { master: T }
 export type MasterId<T = unknown> = { masterId: T }
 export type MasterIds<T = unknown> = { masterIds: T }
 export type Masters<T = unknown> = { masters: T }
+export type MatchType<T = unknown> = { matchType: T }
 export type Material<T = unknown> = { material: T }
 export type MaterialId<T = unknown> = { materialId: T }
 export type MaterialIds<T = unknown> = { materialIds: T }
@@ -828,6 +893,9 @@ export type Max<T = unknown> = { max: T }
 export type MaxAge<T = unknown> = { maxAge: T }
 export type MaxLength<T = unknown> = { maxLength: T }
 export type MaxRecords<T = unknown> = { maxRecords: T }
+export type MaximumColumns<T = unknown> = { maximumColumns: T }
+export type MaximumRows<T = unknown> = { maximumRows: T }
+export type MediaSource<T = unknown> = { mediaSource: T }
 export type Merchant<T = unknown> = { merchant: T }
 export type MerchantId<T = unknown> = { merchantId: T }
 export type MerchantIds<T = unknown> = { merchantIds: T }
@@ -836,6 +904,7 @@ export type Message<T = unknown> = { message: T }
 export type MessageCode<T = unknown> = { messageCode: T }
 export type MessageId<T = unknown> = { messageId: T }
 export type MessageIds<T = unknown> = { messageIds: T }
+export type MessageName<T = unknown> = { messageName: T }
 export type Messages<T = unknown> = { messages: T }
 export type MessengerPositions<T = unknown> = { messengerPositions: T }
 export type Meta<T = unknown> = { meta: T }
@@ -855,6 +924,8 @@ export type MimeType<T = unknown> = { mimeType: T }
 export type Min<T = unknown> = { min: T }
 export type MinAge<T = unknown> = { minAge: T }
 export type MinLength<T = unknown> = { minLength: T }
+export type MinimumColumns<T = unknown> = { minimumColumns: T }
+export type MinimumRows<T = unknown> = { minimumRows: T }
 export type Minutes<T = unknown> = { minutes: T }
 export type Missing<T = unknown> = { missing: T }
 export type MissingId<T = unknown> = { missingId: T }
@@ -878,6 +949,7 @@ export type Namespace<T = unknown> = { namespace: T }
 export type NamespaceId<T = unknown> = { namespaceId: T }
 export type NamespaceIds<T = unknown> = { namespaceIds: T }
 export type Namespaces<T = unknown> = { namespaces: T }
+export type NetworkAccountId<T = unknown> = { networkAccountId: T }
 export type Next<T = unknown> = { next: T }
 export type NextDate<T = unknown> = { nextDate: T }
 export type NextPageUrl<T = unknown> = { nextPageUrl: T }
@@ -952,7 +1024,9 @@ export type OriginId<T = unknown> = { originId: T }
 export type OriginIds<T = unknown> = { originIds: T }
 export type OriginOrderId<T = unknown> = { originOrderId: T }
 export type OriginalProductId<T = unknown> = { originalProductId: T }
+export type OriginalUrl<T = unknown> = { originalUrl: T }
 export type Origins<T = unknown> = { origins: T }
+export type OsVersion<T = unknown> = { osVersion: T }
 export type Owner<T = unknown> = { owner: T }
 export type OwnerId<T = unknown> = { ownerId: T }
 export type OwnerIds<T = unknown> = { ownerIds: T }
@@ -1019,6 +1093,7 @@ export type PixelCode<T = unknown> = { pixelCode: T }
 export type PixelEvent<T = unknown> = { pixelEvent: T }
 export type PixelEvents<T = unknown> = { pixelEvents: T }
 export type PixelId<T = unknown> = { pixelId: T }
+export type Place<T = unknown> = { place: T }
 export type Placement<T = unknown> = { placement: T }
 export type PlacementId<T = unknown> = { placementId: T }
 export type PlacementIds<T = unknown> = { placementIds: T }
@@ -1081,6 +1156,7 @@ export type ProductTrial<T = unknown> = { productTrial: T }
 export type ProductTrialAmount<T = unknown> = { productTrialAmount: T }
 export type ProductTrialCurrency<T = unknown> = { productTrialCurrency: T }
 export type ProductTrialPeriod<T = unknown> = { productTrialPeriod: T }
+export type ProductType<T = unknown> = { productType: T }
 export type Production<T = unknown> = { production: T }
 export type Products<T = unknown> = { products: T }
 export type Profile<T = unknown> = { profile: T }
@@ -1289,6 +1365,7 @@ export type Schemas<T = unknown> = { schemas: T }
 export type Scope<T = unknown> = { scope: T }
 export type Scopes<T = unknown> = { scopes: T }
 export type Screen<T = unknown> = { screen: T }
+export type ScreenName<T = unknown> = { screenName: T }
 export type Screenshot<T = unknown> = { screenshot: T }
 export type ScreenshotId<T = unknown> = { screenshotId: T }
 export type ScreenshotIds<T = unknown> = { screenshotIds: T }
@@ -1297,6 +1374,7 @@ export type ScreenshotPath<T = unknown> = { screenshotPath: T }
 export type ScreenshotUrl<T = unknown> = { screenshotUrl: T }
 export type Screenshots<T = unknown> = { screenshots: T }
 export type Sdk<T = unknown> = { sdk: T }
+export type SdkVersion<T = unknown> = { sdkVersion: T }
 export type Secondary<T = unknown> = { secondary: T }
 export type Seconds<T = unknown> = { seconds: T }
 export type Secret<T = unknown> = { secret: T }
@@ -1391,6 +1469,7 @@ export type Store<T = unknown> = { store: T }
 export type StoreId<T = unknown> = { storeId: T }
 export type StoreIds<T = unknown> = { storeIds: T }
 export type StoreName<T = unknown> = { storeName: T }
+export type StoreProductPage<T = unknown> = { storeProductPage: T }
 export type Strategies<T = unknown> = { strategies: T }
 export type Strategy<T = unknown> = { strategy: T }
 export type StrategyId<T = unknown> = { strategyId: T }
@@ -1490,6 +1569,7 @@ export type TimezoneOffset<T = unknown> = { timezoneOffset: T }
 export type Title<T = unknown> = { title: T }
 export type Tmp<T = unknown> = { tmp: T }
 export type TmpPath<T = unknown> = { tmpPath: T }
+export type To<T = unknown> = { to: T }
 export type ToDate<T = unknown> = { toDate: T }
 export type ToTime<T = unknown> = { toTime: T }
 export type ToTimeMs<T = unknown> = { toTimeMs: T }
@@ -1617,6 +1697,7 @@ export type Weight<T = unknown> = { weight: T }
 export type Where<T = unknown> = { where: T }
 export type Whitelist<T = unknown> = { whitelist: T }
 export type Width<T = unknown> = { width: T }
+export type Wifi<T = unknown> = { wifi: T }
 export type Workspace<T = unknown> = { workspace: T }
 export type WorkspaceId<T = unknown> = { workspaceId: T }
 export type WorkspaceIds<T = unknown> = { workspaceIds: T }
