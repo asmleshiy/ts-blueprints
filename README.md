@@ -5,7 +5,6 @@ This library provides easy-to-use type templates to help you design models with 
 #### Installation
 
 > `npm i ts-blueprints`
-> `npm i -D typescript`
 
 #### Usage
 
