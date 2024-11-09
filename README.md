@@ -11,10 +11,15 @@ This library provides easy-to-use type templates to help you design models with 
 `types.ts`
 
 ```
-import { snakecase as bp, Combine, Select, Subtract  } from 'ts-blueprints'
+import {
+  snakecase as bp,
+  Combine,
+  Select,
+  Subtract,
+} from 'ts-blueprints'
 
 export type Entity = Combine<
-  & bp.ID<number>
+  & bp.Id<number>
   & bp.CreatedAt<Date>
   & bp.UpdatedAt<Date>
   & Partial<bp.DeletedAt<Date>>
@@ -46,7 +51,7 @@ export type EditUserPersonalInfoArgs = Subtract<
 >
 
 export type EditUserPasswordArgs = Select<
-  & bp.ID
+  & bp.Id
   & bp.Salt
   & bp.Password
   , User
@@ -56,7 +61,10 @@ export type EditUserPasswordArgs = Select<
 `interfaces.ts`
 
 ```
-import { EditUserPasswordArgs, EditUserPersonalInfoArgs } from "./types"
+import {
+  EditUserPasswordArgs,
+  EditUserPersonalInfoArgs,
+} from "./types"
 
 export interface IEditableUser {
   editPersonalInfo (args: EditUserPersonalInfoArgs): void
@@ -68,7 +76,11 @@ export interface IEditableUser {
 
 ```
 import { IEditableUser } from "./interfaces"
-import { EditUserPasswordArgs, EditUserPersonalInfoArgs, User } from "./types"
+import {
+  EditUserPasswordArgs,
+  EditUserPersonalInfoArgs,
+  User,
+} from "./types"
 
 export class UserEntity implements User, IEditableUser {
 
@@ -103,7 +115,7 @@ Using this library you can also create your own customized blueprint types that 
 ```
 import { snakecase as bp } from 'ts-blueprints'
 
-export type ID<T extends string | number = string> = bp.ID<T>
-export type CreatedAt<T extends string | number | Date = Date> = bp.CreatedAt<T>
+export type Id<T extends string | number = undefined> = bp.Id<T>
+export type CreatedAt<T extends string | number | Date = undefined> = bp.CreatedAt<T>
 
 ```
